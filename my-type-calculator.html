@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Type Of Calculator</title>
+    <link rel="stylesheet" href="my-type-calculator.css">
+</head>
+<body>
+    
+    <!-- <table class="container">
+        <tr>
+            <td colspan="3"> <input type="text" class="display-box" id="result" disabled > </td>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btnClear"> </td>
+        </tr>
+        
+        <tr>
+            <td> <input type="button" value="1" onclick="display('1')"> </td>
+            <td> <input type="button" value="2" onclick="display('2')"> </td>
+            <td> <input type="button" value="3" onclick="display('3')"> </td>
+            <td> <input type="button" value="/" onclick="display('/')"> </td>
+        </tr>
+
+        <tr>
+            <td> <input type="button" value="4" onclick="display('4')"> </td>
+            <td> <input type="button" value="5" onclick="display('5')"> </td>
+            <td> <input type="button" value="6" onclick="display('6')"> </td>
+            <td> <input type="button" value="-" onclick="display('-')"> </td>
+        </tr>
+
+        <tr>
+            <td> <input type="button" value="7" onclick="display('7')"> </td>
+            <td> <input type="button" value="8" onclick="display('8')"> </td>
+            <td> <input type="button" value="9" onclick="display('9')"> </td>
+            <td> <input type="button" value="+" onclick="display('+')"> </td>
+        </tr>
+
+        <tr>
+            <td> <input type="button" value="." onclick="display('.')"> </td>
+            <td> <input type="button" value="0" onclick="display('0')"> </td>
+    
+            <td> <input type="button" value="=" onclick="claculate()" id="btn"> </td>
+            <td> <input type="button" value="*" onclick="display('*')"> </td>
+        </tr>
+    </table> -->
+
+    <div class="container-grid">
+        <div class="output">
+            <div data-previous-operand class="display previous"></div>
+            <div data-current-operand class="display current"></div>
+        </div>
+
+        <button data-clear class="span-two">C</button>
+        <button data-operation>+</button>
+        <button data-operation>-</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>×</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>÷</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+
+
+        <button data-equals class="span-three">=</button>
+    </div>
+
+    <script src="my-type-calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+body{
+    background-color: #000000;
+}
+
+.container-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    margin-bottom: -70px;
+}
+
+
+
+.container-grid button{
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid #d1d0d03d;        
+    outline: none;
+    background:linear-gradient(to bottom, #1f1f1f, #0a0a0a);
+    transition: 0.5s;
+}
+
+.container-grid button:hover{
+    background:linear-gradient(to bottom, #4e4e4e, #242323);
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.span-three{
+    grid-column: span 3;
+    transition: all 0.2s;
+}
+
+.output{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-column: 1 / -1;
+    height: 148px;
+
+    padding: 10px;
+}
+
+.output .display{
+    color: #fff;
+    border: none;
+    font-size: 6rem;
+    font-weight: 200;
+    background-color: transparent;
+}
+
+@media (min-width: 900px){
+
+    .container-grid{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        min-height: 100vh;
+        margin-left: -10px;
+        grid-template-columns: repeat(4, 336px);
+        grid-template-rows: minmax(120px, auto) repeat(5, 10px);
+    }
+
+    .output{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        grid-column: 1 / -1;
+        height: 148px;
+        margin-top: 40px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        flex-direction: column;
+        word-wrap: break-word;
+        word-break:break-all;
+        padding: 10px;
+    }
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    /* background: linear-gradient(to right, #00aaff, #00ff6c); */
+    background-color: #000;
+}
+
+.container-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 102px);
+}
+
+.container-grid > button{
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid #d1d0d03d;
+    outline: none;
+    background:linear-gradient(to bottom, #161616, #000000);
+    /* box-shadow: 0px 0px 53px 17px rgba(71, 70, 70, 0.164); */
+    transition: all 0.2s;
+}
+
+.container-grid > button:hover{
+    background: none;
+    background-color: rgb(61, 61, 61);
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.span-three{
+    grid-column: span 3;
+}
+
+.output{
+    display: flex;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    grid-column: 1 / -1;
+    border: 1px solid #81818177;
+    background-color: rgba(59, 59, 59, 0.096);
+    padding: 10px;
+    word-wrap: break-word;
+    word-break:break-all;
+}
+
+.output .display{
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 30px;
+}
+
+.current{
+    margin-left: 8px;
+}
+
+.symbol{
+    margin-left: -10px;
+}
+
+@media (max-width: 1200px){
+    .container-grid{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        min-height: 100vh;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    }
+}
