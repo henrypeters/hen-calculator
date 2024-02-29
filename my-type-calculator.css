@@ -158,10 +158,11 @@ body{
 }
 
 .current{
-    margin-left: 8px;
+    margin-left: 3px;
 }
 
 .symbol{
+    font-style: normal;
     margin-left: -10px;
 }
 
