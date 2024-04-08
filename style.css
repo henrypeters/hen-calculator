@@ -118,7 +118,7 @@ body{
 .container-grid > button{
     color: #fff;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.6rem;
     border: 1px solid #d1d0d03d;
     outline: none;
     background:linear-gradient(to bottom, #161616, #000000);
